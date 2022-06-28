@@ -13,7 +13,7 @@ spring:
           predicates:
             - Path=/orders/** 
         - id: delivery
-          uri: http://user09-delivery:8080
+          uri: http://user03-delivery:8080
           predicates:
             - Path=/deliveries/** 
         - id: product
@@ -22,8 +22,7 @@ spring:
             - Path=/inventories/** 
         - id: frontend
           uri: http://frontend:8080
-          predicates:
-            - Path=/**
+          predicates:        
       globalcors:
         corsConfigurations:
           '[/**]':
