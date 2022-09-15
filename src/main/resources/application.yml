@@ -9,15 +9,15 @@ spring:
     gateway:
       routes:
         - id: order
-          uri: http://user03-order:8080
+          uri: http://userceh-order:8080
           predicates:
             - Path=/orders/** 
         - id: delivery
-          uri: http://user03-delivery:8080
+          uri: http://userceh-delivery:8080
           predicates:
             - Path=/deliveries/** 
         - id: product
-          uri: http://user03-product:8080
+          uri: http://userceh-product:8080
           predicates:
             - Path=/inventories/** 
         - id: frontend
@@ -43,15 +43,15 @@ spring:
     gateway:
       routes:
         - id: order
-          uri: http://user03-order:8080
+          uri: http://userceh-order:8080
           predicates:
             - Path=/orders/** 
         - id: delivery
-          uri: http://user03-delivery:8080
+          uri: http://userceh-delivery:8080
           predicates:
             - Path=/deliveries/** 
         - id: product
-          uri: http://user03-product:8080
+          uri: http://userceh-product:8080
           predicates:
             - Path=/inventories/** 
         - id: frontend
